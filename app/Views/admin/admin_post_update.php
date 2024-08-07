@@ -12,8 +12,9 @@
 <body>
     <nav class="container navbar navbar-expand-md navbar-dark fixed-top bg-success shadow">
         <div class="container">
-            <a class="navbar-brand" href="<?= base_url() ?>"><img src="img/navlogo-gizila.png" alt="logo"
-                    height="50"></a>
+            <a class="navbar-brand" href="<?= base_url() ?>">
+                <img src="<?= base_url('img/navlogo-gizila.png') ?>" alt="logo" height="50">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -60,7 +61,7 @@
             </div>
             <div class="form-group mb-2">
                 <button type="submit" name="status" value="published" class="btn btn-primary">Publish</button>
-                <button type="submit" name="status" value="draft" class="btn btn-warning">Save</button>
+                <button type="submit" name="status" value="draft" class="btn btn-success">Save</button>
             </div>
         </form>
     </div>
@@ -69,8 +70,8 @@
         <footer class="text-center bg-primary text-white rounded-3">
             <!-- Copyright -->
             <div class="text-center p-3 bg-success rounded-3">
-                <span class="mb-3 mb-md-0 text-white">© 2024 Copyright by <a class="text-white"
-                        href="https://github.com/alfaaannz?tab=repositories">Muhamad Alfan Alfajri</a></span>
+                <span class="mb-3 mb-md-0 text-white">© 2024 Copyright by <a class="text-white" target="_blank"
+                        href="https://github.com/alfaaannz">Muhamad Alfan Alfajri</a></span>
             </div>
             <!-- Copyright -->
         </footer>

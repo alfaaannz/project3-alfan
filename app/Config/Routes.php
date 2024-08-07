@@ -23,7 +23,7 @@ $routes->group('admin', function ($routes) {
 	$routes->get('auth/logout', 'AuthController::logout');
 	$routes->get('auth/login', 'AuthController::login');
 	$routes->get('/auth/logout', 'Auth::logout');
-	$routes->get('/auth/login', 'Auth::login'); // Pastikan Anda memiliki method login di Auth controller
+	$routes->get('/auth/login', 'Auth::login');
 
 
 

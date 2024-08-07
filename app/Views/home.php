@@ -16,7 +16,7 @@
         <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugit laboriosam
             aspernatur nisi ipsa qui ut libero aliquam dolorum dolores.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-success btn-lg px-4 gap-3">Selengkapnya</button>
+            <a href="<?= base_url('admin/post') ?>" class="btn btn-success btn-lg px-4 gap-3">Masuk</a>
         </div>
     </div>
 </div>
@@ -32,7 +32,8 @@
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca Selengkapnya</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca
+                                    Selengkapnya</button>
                             </div>
                         </div>
                     </div>
@@ -46,21 +47,8 @@
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca Selengkapnya</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="img/coming-soon.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca Selengkapnya</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca
+                                    Selengkapnya</button>
                             </div>
                         </div>
                     </div>
@@ -74,7 +62,8 @@
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca Selengkapnya</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca
+                                    Selengkapnya</button>
                             </div>
                         </div>
                     </div>
@@ -88,7 +77,8 @@
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca Selengkapnya</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca
+                                    Selengkapnya</button>
                             </div>
                         </div>
                     </div>
@@ -102,7 +92,23 @@
                             additional content. This content is a little bit longer.</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca Selengkapnya</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca
+                                    Selengkapnya</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="img/coming-soon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Baca
+                                    Selengkapnya</button>
                             </div>
                         </div>
                     </div>

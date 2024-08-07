@@ -12,7 +12,9 @@
 <body>
     <nav class="container navbar navbar-expand-md navbar-dark fixed-top bg-success shadow">
         <div class="container">
-        <a class="navbar-brand" href="<?= base_url() ?>"><img src="img/navlogo-gizila.png" alt="logo" height="50"></a>
+            <a class="navbar-brand" href="<?= base_url() ?>">
+                <img src="<?= base_url('img/navlogo-gizila.png') ?>" alt="logo" height="50">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,27 +24,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('admin/post') ?>">Home</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('admin/post') ?>">Grafik</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('admin/post') ?>">Artikel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('admin/post') ?>">Galery</a>
-                    </li> -->
                 </ul>
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="<?= base_url('admin/post/new') ?>" class="btn btn-light mr-3">New Post</a>
+                    <li class="nav-item me-3">
+                        <a href="<?= base_url('admin/post/new') ?>" class="btn btn-light">New Post</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('logout') ?>">Logout</a>
+                        <button class="btn btn-danger" onclick="confirmLogout()">Logout</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <div class="container p-5 mb-4 bg-success rounded-3 card text-center">
         <div class="card-header"></div>
@@ -73,11 +67,10 @@
                                 <img src="<?= base_url('uploads/' . $post['image']) ?>" alt="<?= $post['title'] ?>"
                                     class="img-thumbnail" style="width: 150px; height: auto;">
                             <?php else: ?>
-                                <img src="<?= base_url('uploads/coming-soon.png') ?>" alt="Default Image"
-                                    class="img-thumbnail" style="width: 150px; height: auto;">
+                                <img src="<?= base_url('uploads/coming-soon.png') ?>" alt="Default Image" class="img-thumbnail"
+                                    style="width: 150px; height: auto;">
                             <?php endif ?>
                         </td>
-
                         <td>
                             <strong><?= $post['title'] ?></strong><br>
                             <small class="text-muted"><?= $post['created_at'] ?></small>
@@ -91,7 +84,7 @@
                         </td>
                         <td>
                             <a href="<?= base_url('admin/post/' . $post['id'] . '/preview') ?>"
-                                class="btn btn-sm btn-outline-secondary" target="_blank">Preview</a>
+                                class="btn btn-sm btn-outline-secondary">Preview</a>
                             <a href="<?= base_url('admin/post/' . $post['id'] . '/edit') ?>"
                                 class="btn btn-sm btn-outline-secondary">Edit</a>
                             <a href="#" data-href="<?= base_url('admin/post/' . $post['id'] . '/delete') ?>"
@@ -117,10 +110,32 @@
             </div>
         </div>
 
+        <div id="logout-dialog" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h2 class="h2">Are you sure?</h2>
+                        <p>Do you really want to logout?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="<?= base_url('logout') ?>" role="button" class="btn btn-danger">Yes</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>
             function confirmToDelete(el) {
                 document.getElementById("delete-button").setAttribute("href", el.dataset.href);
                 var myModal = new bootstrap.Modal(document.getElementById('confirm-dialog'), {
+                    keyboard: false
+                });
+                myModal.show();
+            }
+
+            function confirmLogout() {
+                var myModal = new bootstrap.Modal(document.getElementById('logout-dialog'), {
                     keyboard: false
                 });
                 myModal.show();
@@ -132,13 +147,12 @@
         <footer class="text-center bg-body-tertiary">
             <!-- Copyright -->
             <div class="text-center p-3 bg-success rounded-3">
-                <span class="mb-3 mb-md-0 text-white">© 2024 Copyright by <a class="text-white" href="https://github.com/alfaaannz?tab=repositories">Muhamad Alfan Alfajri</a></span>
+                <span class="mb-3 mb-md-0 text-white">© 2024 Copyright by <a class="text-white" target="_blank"
+                        href="https://github.com/alfaaannz">Muhamad Alfan Alfajri</a></span>
             </div>
             <!-- Copyright -->
         </footer>
     </div>
-    <!-- J
-
     <!-- Jquery dan Bootstrap JS -->
     <script src="<?= base_url('js/jquery.min.js') ?>"></script>
     <script src="<?= base_url('js/bootstrap.bundle.min.js') ?>"></script>
