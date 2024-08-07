@@ -11,15 +11,12 @@ class Post extends BaseController
     {
         // buat object model $post
         $post = new PostModel();
-        /*
-        siapkan data untuk dikirim ke view dengan nama $posts
-        dan isi datanya dengan post yang sudah terbit
-        */
+        /*siapkan data untuk dikirim ke view dengan nama $posts dan isi datanya dengan post yang sudah terbit*/
         $data['posts'] = $post->where('status', 'published')->findAll();
         // kirim data ke view
         echo view('post', $data);
     }
-
+    //------------------------------------------------------------
     public function viewPost($slug)
     {
         $post = new PostModel();

@@ -13,10 +13,19 @@ $routes->get('/faqs', 'Page::faqs');
 $routes->get('/post', 'Post::index');
 $routes->get('/post/(:any)', 'Post::viewPost/$1');
 
-$routes->group('admin', function($routes){
-  $routes->get('post', 'PostAdmin::index');
-  $routes->get('post/(:segment)/preview', 'PostAdmin::preview/$1');
-  $routes->add('post/new', 'PostAdmin::create');
-  $routes->add('post/(:segment)/edit', 'PostAdmin::edit/$1');
-  $routes->get('post/(:segment)/delete', 'PostAdmin::delete/$1');
-  });
+$routes->group('admin', function ($routes) {
+	$routes->get('post', 'PostAdmin::index');
+	$routes->get('post/(:segment)/preview', 'PostAdmin::preview/$1');
+	$routes->add('post/new', 'PostAdmin::create');
+	$routes->add('post/(:segment)/edit', 'PostAdmin::edit/$1');
+	$routes->get('post/(:segment)/delete', 'PostAdmin::delete/$1');
+	$routes->post('images/store', 'Images::store');
+	$routes->get('auth/logout', 'AuthController::logout');
+	$routes->get('auth/login', 'AuthController::login');
+	$routes->get('/auth/logout', 'Auth::logout');
+	$routes->get('/auth/login', 'Auth::login'); // Pastikan Anda memiliki method login di Auth controller
+
+
+
+
+});

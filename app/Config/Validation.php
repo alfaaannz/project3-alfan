@@ -11,10 +11,6 @@ use Myth\Auth\Authentication\Passwords\ValidationRules;
 
 class Validation extends BaseConfig
 {
-    // --------------------------------------------------------------------
-    // Setup
-    // --------------------------------------------------------------------
-
     /**
      * Stores the classes that contain the
      * rules that are available.

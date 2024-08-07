@@ -1,42 +1,33 @@
 <?php echo $this->extend('layouts/default'); ?>
-
 <?php echo $this->section('content'); ?>
-<div class="p-5 mb-4 bg-light rounded-3">
-  <div class="container py-5">
-    <h1 class="display-5 fw-bold">About</h1>
-    <!-- <p class="col-md-8 fs-4">di laman portal berita</p> -->
-    <!-- <button class="btn btn-primary btn-sm" type="button">Read more</button> -->
-  </div>
+
+<div class="container p-5 mb-10 bg-body-tertiary bg-success rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold text-white">About Us</h1>
+    </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 my-2 card">
-      <div class="card-body">
-        <h5 class="h5">Siapa Aku</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Quibusdam perferendis commodi tenetur quos ducimus repellat nulla, nam magni.
-          Commodi iusto ad harum voluptas exercitationem facere eos earum laboriosam excepturi
-          quas?</p>
-      </div>
+
+<section class="showcase">
+    <div class="container">
+        <h1></h1>
     </div>
-    <div class="col-md-12 my-2 card">
-      <div class="card-body">
-        <h5 class="h5">Bisa Apa Aku</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Quibusdam perferendis commodi tenetur quos ducimus repellat nulla, nam magni.
-          Commodi iusto ad harum voluptas exercitationem facere eos earum laboriosam excepturi
-          quas?</p>
-      </div>
-    </div>
-    <div class="col-md-12 my-2 card">
-      <div class="card-body">
-        <h5 class="h5">Bagaimana Aku</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Quibusdam perferendis commodi tenetur quos ducimus repellat nulla, nam magni.
-          Commodi iusto ad harum voluptas exercitationem facere eos earum laboriosam excepturi
-          quas?</p>
-      </div>
-    </div>
-  </div>
-</div>
+</section>
+
+<section class="container">
+    <h2>Tentang Kami</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi impedit est ipsa repudiandae dignissimos quae
+        dolorum, corporis aut ex saepe blanditiis, vitae nesciunt libero obcaecati voluptas aspernatur ducimus.
+        Temporibus officiis ipsa est laudantium pariatur iusto inventore molestiae quibusdam facere laborum!</p>
+
+    <h2>Visi Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum accusamus fuga. Aperiam ea nemo omnis
+        suscipit beatae quae, commodi, distinctio, enim reiciendis neque quas nulla quaerat magnam. Necessitatibus, vero
+        similique ut laudantium neque dignissimos. Molestias cupiditate neque vitae eligendi.</p>
+
+    <h2>Misi Kami</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laudantium, quia incidunt reprehenderit optio
+        sequi delectus fugit magni, distinctio, perferendis ab laboriosam suscipit ea! Ullam fugit dolorum veniam
+        ducimus nam commodi nesciunt asperiores ut voluptates quibusdam, ipsum itaque quasi eaque?</p>
+</section>
+
 <?php echo $this->endSection(); ?>
