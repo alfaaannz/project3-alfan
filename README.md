@@ -2,10 +2,6 @@
 
 Dikembangkan untuk memenuhi tugas UAS Pengembangan Aplikasi Web Framework
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 682a9f251bab529a050daa888614122295390329
 ## Run Locally
 
 1. Clone the project
